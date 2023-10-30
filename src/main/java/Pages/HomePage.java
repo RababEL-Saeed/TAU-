@@ -1,8 +1,9 @@
 package Pages;
 
+import Pages.AlertsPackage.AlertsPage;
+import Pages.AlertsPackage.FileUploadPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomePage {
 
@@ -76,6 +77,11 @@ public class HomePage {
     {
         clickLinke("//a[contains( .,\"WYSIWYG Editor\")]");
         return new WYSIWYGEditorPage(driver);
+    }
+    public FileUploadPage clickOnFileUpload ()
+    {
+        clickLinke ("//a[contains(text(),\"File Upload\")]");
+        return new FileUploadPage(driver);
     }
 
 

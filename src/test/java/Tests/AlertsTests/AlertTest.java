@@ -1,11 +1,10 @@
-package Tests;
+package Tests.AlertsTests;
 
-import Pages.AlertsPage;
+import Pages.AlertsPackage.AlertsPage;
 import Pages.HomePage;
+import Tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
 
 public class AlertTest  extends BaseTest {
 
