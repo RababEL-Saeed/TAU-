@@ -72,6 +72,13 @@ public class HomePage {
     }
 
 
+    public WYSIWYGEditorPage clickonWYSIWYGEditor ()
+    {
+        clickLinke("//a[contains( .,\"WYSIWYG Editor\")]");
+        return new WYSIWYGEditorPage(driver);
+    }
+
+
 
 
 
