@@ -85,6 +85,16 @@ public class HomePage {
     }
 
 
+    public FramesPage  clickOnFrames ()
+    {
+        clickLinke ("//a[contains(text(),\"Frames\")][not(contains(text(),\"Nested\"))]");
+        return new FramesPage(driver);
+    }
+
+
+
+
+
 
 
 
