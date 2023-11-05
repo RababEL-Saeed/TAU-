@@ -91,6 +91,15 @@ public class HomePage {
         return new FramesPage(driver);
     }
 
+    public DynamicLoadingPage clickOnDynamicLoadingPage ()
+    {
+        clickLinke("//a[contains (text(),\"Dynamic Loading\")]");
+        return new DynamicLoadingPage(driver);
+    }
+
+
+
+
 
 
 
