@@ -91,11 +91,26 @@ public class HomePage {
         return new FramesPage(driver);
     }
 
-    public DynamicLoadingPage clickOnDynamicLoadingPage ()
+    public DynamicLoadingPage clickOnDynamicLoadingLink()
     {
         clickLinke("//a[contains (text(),\"Dynamic Loading\")]");
         return new DynamicLoadingPage(driver);
     }
+
+
+    public ContextMenuPage clickOnContextMenuLink ()
+    {
+        clickLinke("//a[contains (text(),\"Context Menu\")]");
+        return new ContextMenuPage (driver);
+    }
+
+
+    public FramesPracticePage clickOnFramesLink ()
+    {
+        clickLinke("//a[contains (text(),\"Nested Frames\")]");
+        return new FramesPracticePage (driver);
+    }
+
 
 
 

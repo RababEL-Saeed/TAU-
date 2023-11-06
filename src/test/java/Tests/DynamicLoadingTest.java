@@ -10,7 +10,10 @@ public class DynamicLoadingTest extends BaseTest {
     @Test
     public void validateFinalText ()
     {
-        new HomePage(driver).clickOnDynamicLoadingPage().clickOnExample1().clickOnStartButton();
+        new HomePage(driver).clickOnDynamicLoadingLink().clickOnExample1().clickOnStartButton();
         Assert.assertEquals(new DynamicLoadingPageElements(driver).getFinalText(),"Hello World!");
     }
+
+
+
 }
